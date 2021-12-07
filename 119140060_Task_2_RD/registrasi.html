@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="registrasi.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi</title>
+</head>
+<body>
+    <div class="mainwrapper">
+        <h1>Registrasi</h1>
+        <h2>Isikan data dirimu untuk bergabung</h2>
+        <form action="halamanutama.php" method="POST">
+            <label for="nama" >Nama </label><br>
+            <input type="text" id="nama" name="nama" class="inputan" required><br>
+            
+            <label for="nama">NIM </label><br>
+            <input type="text" id="nim" name="nim" class="inputan" required><br>
+
+            <label for="tanggal">Tanggal Lahir</label><br>
+            <input type="date" name="tanggallahir" class="inputan" ><br>
+            
+            <label for="jenis">Jenis Kelamin</label><br>
+            <input type="radio" id="lelaki" name="radio" value="Laki-laki" class="inputradio">
+            <label for="Laki-laki">Laki-laki</label>
+            <input type="radio" id="peremupan" name="radio" class="inputradio" value="Perempuan" >
+            <label for="Perempuan">Perempuan</label><br>
+
+            <label for="cerita_hidup">Ceritakan Hidupmu  </label><br>
+            <textarea type="message" name="cerita" class="inputcerita"></textarea><br>
+
+            <input type="checkbox" required><label for="yakin">Apakah kamu yakin ?</label><br><br>
+            <button id="submit" class="submit">Submit</button>
+            
+        </form>
+    </div>
+</body>
+</html>
